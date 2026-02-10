@@ -1,0 +1,101 @@
+{
+  "name": "Linter Cop Rules - Code Style",
+  "description": "Rules that are adjusted to our needs - and enforced now.",
+  "rules": [
+    {
+      "id": "LC0001",
+      "action": "Error",
+      "justification": "FlowFields should not be editable."
+    },
+    {
+      "id": "LC0003",
+      "action": "Error",
+      "justification": "Do not use an Object ID for properties or variable declarations."
+    },
+    {
+      "id": "LC0004",
+      "action": "Error",
+      "justification": "DrillDownPageId and LookupPageId must be filled in table when table is used in list page."
+    },
+    {
+      "id": "LC0005",
+      "action": "Warning",
+      "justification": "The casing of variable/method usage must align with the definition."
+    },
+    {
+      "id": "LC0011",
+      "action": "Error",
+      "justification": "Every object needs to specify a value for the Access property. ~ From runtime 4.0. Script comments this for unsupported versions."
+    },
+    {
+      "id": "LC0013",
+      "action": "Error",
+      "justification": "Any table with a single field in the PK of type code or text, should have set NotBlank on the PK field."
+    },
+    {
+      "id": "LC0016",
+      "action": "Error",
+      "justification": "Caption is missing."
+    },
+    {
+      "id": "LC0024",
+      "action": "Error",
+      "justification": "Procedure or Trigger declaration should not end with semicolon."
+    },
+    {
+      "id": "LC0032",
+      "action": "Warning",
+      "justification": "Clear(All) does not affect or change values for global variables in single instance codeunits."
+    },
+    {
+      "id": "LC0041",
+      "action": "Error",
+      "justification": "Empty Captions should be Locked. ~ Set to Error to avoid empty strings in translation files."
+    },
+    {
+      "id": "LC0044",
+      "action": "Error",
+      "justification": "Tables coupled with TransferFields must have matching fields."
+    },
+    {
+      "id": "LC0045",
+      "action": "Error",
+      "justification": "Zero (0) Enum value should be reserved for Empty Value."
+    },
+    {
+      "id": "LC0048",
+      "action": "None",
+      "justification": "Use Error with a ErrorInfo or Label variable to improve telemetry details. ~ Set to None to accommodate the use of Error with a MOB Message e.g. Error(MobWmsLanguage.GetMessage('WHSE_TRKG_NEEDED'), _ItemNo);"
+    },
+    {
+      "id": "LC0055",
+      "action": "Warning",
+      "justification": "The suffix Tok is meant to be used when the value of a locked label matches the name."
+    },
+    {
+      "id": "LC0066",
+      "action": "Info",
+      "justification": "Duplicate ToolTip between page and table field."
+    },
+    {
+      "id": "LC0076",
+      "action": "Error",
+      "justification": "The field with table relation should have at least the same length as the referenced field."
+    },
+    {
+      "id": "LC0077",
+      "action": "Error",
+      "justification": "Methods should always be called with parenthesis."
+    },
+    {
+      "id": "LC0086",
+      "action": "None",
+      "justification": "Use the new PageStyle datatype instead string literals. ~ Set to None as this is shown for code that is not page style related. And it is not that important to change."
+    },
+    {
+      "id": "LC0091",
+      "action": "None",
+      "justification": "Translatable texts should be translated. ~ Set to None because of new translation flow."
+    }
+  ]
+}

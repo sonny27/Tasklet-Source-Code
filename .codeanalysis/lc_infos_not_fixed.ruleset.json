@@ -1,0 +1,86 @@
+{
+  "name": "Linter Cop Rules - Infos not fixed",
+  "description": "Rules that we have decided to keep as Info to enforce them for new code, but we have not yet fixed all legacy code to comply with them.",
+  "rules": [
+    {
+      "id": "LC0002",
+      "action": "Info",
+      "justification": "Commit() needs a comment to justify its existence. Either a leading or a trailing comment."
+    },
+    {
+      "id": "LC0010",
+      "action": "Info",
+      "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
+    },
+    { 
+      "id": "LC0023",
+      "action": "Info",
+      "justification": "Always provide fieldsgroups DropDown and Brick on tables."
+    },
+    {
+      "id": "LC0025",
+      "action": "Info",
+      "justification": "Procedure must be either local, internal or define a documentation comment. ~ Related to LC0072."
+    },
+    {
+      "id": "LC0026",
+      "action": "Info",
+      "justification": "ToolTip must end with a dot."
+    },
+    {
+      "id": "LC0036",
+      "action": "Info",
+      "justification": "ToolTip must start with the verb \"Specifies\"."
+    },
+    {
+      "id": "LC0037",
+      "action": "Info",
+      "justification": "Do not use line breaks in ToolTip."
+    },
+    {
+      "id": "LC0038",
+      "action": "Info",
+      "justification": "Try to not exceed 200 characters (including spaces)."
+    }, 
+    {
+      "id": "LC0040",
+      "action": "Info",
+      "justification": "Explicitly set the RunTrigger parameter on build-in methods. ~ Being explicit is better than being implicit."
+    },
+    {
+      "id": "LC0068",
+      "action": "Info",
+      "justification": "Informs the user that there are missing permission to access tabledata. ~ Set indirect permissions in code to allow the user to run the code with indirect permissions."
+    },
+    {
+      "id": "LC0069",
+      "action": "Info",
+      "justification": "Empty statements should be avoided or should have a leading or trailing comment explaining their use. Set to Info as it seems to be unstable."
+    },
+    {
+      "id": "LC0072",
+      "action": "Info",
+      "justification": "The documentation comment must match the procedure syntax. ~ Related to LC0025."
+    },
+    {
+      "id": "LC0078",
+      "action": "Info",
+      "justification": "Temporary records should not trigger table triggers. ~ Set to Info to raise awareness in new code. We can not always avoid it, but we should be aware of it."
+    },
+    {
+      "id": "LC0081",
+      "action": "Info",
+      "justification": "Use Rec.IsEmpty() for checking record existence. ~ Performance."
+    },
+    {
+      "id": "LC0082",
+      "action": "Info",
+      "justification": "Consider using a Query or Rec.Find('-') with Rec.Next(). ~ Performance."
+    },
+    {
+      "id": "LC0090",
+      "action": "Info",
+      "justification": "Show Cognitive Complexity diagnostics for methods above threshold. ~ Helps to keep code maintainable."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Our Ruleset",
+  "description": "The rules that we follow - adjustments to code cop rules",
+  "includedRuleSets": [
+    {
+      "action": "Default",
+      "path": "./ignore.ruleset.json"
+    },
+    {
+      "action": "Default",
+      "path": "./lc_code_style.ruleset.json"
+    },
+    {
+      "action": "Default",
+      "path": "./lc_future_fixes.ruleset.json"
+    },
+    {
+      "action": "Default",
+      "path": "./lc_newer_versions.ruleset.json"
+    },
+    {
+      "action": "Default",
+      "path": "./lc_infos_not_fixed.ruleset.json"
+    }
+  ]
+}

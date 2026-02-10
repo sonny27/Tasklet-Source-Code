@@ -1,0 +1,46 @@
+{
+  "name": "Linter Cop Rules - Future Fixes",
+  "description": "Rules that would be good to enforce, but we need to plan their implementation first.",
+  "rules": [
+    {
+      "id": "LC0015",
+      "action": "None",
+      "justification": "All application objects should be covered by at least one permission set in the extension. ~ This rule will be enabled when we create new permission sets."
+    },
+    {
+      "id": "LC0031",
+      "action": "None",
+      "justification": "Use ReadIsolation instead of LockTable. ~ This rule should be fixed, but we need to plan it."
+    },
+    {
+      "id": "LC0043",
+      "action": "None",
+      "justification": "Use SecretText type to protect credentials and sensitive textual values from being revealed. ~ Should be fixed ASAP for security reasons, but we need to plan it."
+    },
+    {
+      "id": "LC0051",
+      "action": "None",
+      "justification": "Do not assign a text to a target with smaller size. ~ Possible overflow - like AA0139. This rule should be fixed, but we need to plan it."
+    },
+    {
+      "id": "LC0075",
+      "action": "None",
+      "justification": "Incorrect number or type of arguments in .Get() method on Record object. ~ Should we fix it e.g. together with possible overflow issues (AA0139 and LC0051)?"
+    },
+    {
+      "id": "LC0084",
+      "action": "None",
+      "justification": "Use return value for better error handling. ~ Should we introduce better error handling when getting/finding records? It would be more user friendly, but it would also require more code and changes to existing code."
+    },
+    {
+      "id": "LC0088",
+      "action": "None",
+      "justification": "Option types should be avoided, use enum if applicable. ~ We should consider refactoring old code to use enums instead of option types, but this requires careful planning."
+    },   
+    {
+      "id": "LC0092",
+      "action": "None",
+      "justification": "Names must match the allowed pattern and must not match the disallowed pattern. ~ Maybe we can utilize naming patterns in LinterCop.json. Can not get it to work right now. Can we define our naming conventions here?"
+    }
+  ]
+}

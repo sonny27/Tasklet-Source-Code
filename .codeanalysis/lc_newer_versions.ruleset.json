@@ -1,0 +1,71 @@
+{
+  "name": "Linter Cop Rules - Newer Versions",
+  "description": "Rules are disabled for now because they are only applicable to newer versions of Business Central. They should be enabled when we drop support for older versions.",
+  "rules": [
+    {
+      "id": "LC0019",
+      "action": "None",
+      "justification": "If Data Classification is set on the Table. Fields do not need the same classification."
+    },
+    {
+      "id": "LC0020",
+      "action": "None",
+      "justification": "If Application Area is set on the TablePage. Controls do not need the same classification."
+    },
+    {
+      "id": "LC0021",
+      "action": "None",
+      "justification": "Confirm() must be implemented through the Confirm Management codeunit from the System Application."
+    },
+    {
+      "id": "LC0022",
+      "action": "None",
+      "justification": "GlobalLanguage() must be implemented through the Translation Helper codeunit from the Base Application."
+    },
+    {
+      "id": "LC0027",
+      "action": "None",
+      "justification": "Utilize the Page Management codeunit for launching page."
+    },
+    {
+      "id": "LC0028",
+      "action": "None",
+      "justification": "Event subscriber arguments now use identifier syntax instead of string literals."
+    },
+    {
+      "id": "LC0029",
+      "action": "None",
+      "justification": "Use CompareDateTime method in Type Helper codeunit for DateTime variable comparisons."
+    },
+    {
+      "id": "LC0030",
+      "action": "None",
+      "justification": "Set Access property to Internal for Install/Upgrade codeunits. ~ From runtime 4.0. Important to enable rule ASAP."
+    },
+    {
+      "id": "LC0034",
+      "action": "None",
+      "justification": "The property Extensible should be explicitly set for public objects. ~ From runtime 4.0. Important to enable rule ASAP."
+    },
+    {
+      "id": "LC0035",
+      "action": "None",
+      "justification": "Explicitly set AllowInCustomizations for fields omitted on pages."
+    },
+    {
+      "id": "LC0064",
+      "action": "None",
+      "justification": "Missing ToolTip property on table field. ~ From runtime 13.0. We will enforce this rule when we drop support for older versions."
+    },
+    {
+      "id": "LC0083",
+      "action": "None",
+      "justification": "Use new Date/Time/DateTime methods for extracting parts."
+    },
+    {
+      "id": "LC0085",
+      "action": "None",
+      "justification": "Use the (CR)LFSeparator from the \"Type Helper\" codeunit."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "supportedCountries": [ 
+        "AE", "AU", "AT", "BE", "BR", "CA", "CH", "CO", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "HK", "HR", "HU",
+        "ID", "IE", "IS", "IT", "JP", "KR", "LV", "LT", "MX", "MY", "NL", "NZ", "NO", "PE", "PH", "PL", "PT", "RS", "RU", "SE", "SG", "SI", "ZA", "TH", "TW", "US", "VN"
+    ],    
+    "mandatoryAffixes": ["MOB"],
+    "version": "5.60.260.269"
+}

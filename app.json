@@ -1,0 +1,45 @@
+{
+  "id": "b3f608cf-fa76-462c-8aa1-ef5adaceb427",
+  "name": "Tasklet Mobile WMS (Tenant Edition)",
+  "publisher": "Tasklet Factory",
+  "brief": "Mobile WMS (Tenant Edition) Barcode scanning solution.",
+  "description": "The Mobile WMS (Tenant Edition) Barcode scanning solution integrates to the standard Warehouse functionality in Business Central and allows employees to process orders both online and offline.",
+  "version": "5.61.260.270",
+  "privacyStatement": "https://taskletfactory.com/cookie-and-privacy-policy/",
+  "EULA": "https://taskletfactory.com/media/eb1kcb0z/end-user-license-agreement-version-3-2.pdf",
+  "help": "https://university.taskletfactory.com",
+  "url": "https://taskletfactory.com",
+  "logo": "./gfx/applogo.png",
+  "contextSensitiveHelpUrl": "https://taskletfactory.atlassian.net/wiki/spaces/TFSK/pages/78943297/Business+Central",
+  "screenshots": [],
+  "application": "26.0.0.0",
+  "platform": "26.0.0.0",
+  "dependencies": [],
+  "resourceExposurePolicy": 
+    {
+      "allowDebugging": true,
+      "allowDownloadingSource": false,
+      "includeSourceInSymbolFile": false
+    },
+  "features": ["TranslationFile"],
+  "resourceFolders": ["resources"],
+  "internalsVisibleTo": [    { 
+    "id": "b6e75432-5745-4440-8bda-a29be9a00bc1", 
+    "name": "Mobile WMS (Tenant Edition) Testing", 
+    "publisher": "Tasklet Factory"
+  }],
+  "target": "Cloud",
+  "applicationInsightsConnectionString": "InstrumentationKey=a88d74df-1a4b-4593-a86f-fccde5697936;IngestionEndpoint=https://northeurope-0.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/",
+  "keyVaultUrls": ["https://mobilewms-bc.vault.azure.net/"],
+  "idRanges": [
+    {
+      "from": 81271,
+      "to": 82270
+    },
+    {
+      "from": 6182200,
+      "to": 6182250
+    }    
+  ],
+  "runtime": "15.0"
+}

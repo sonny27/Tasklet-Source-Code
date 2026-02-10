@@ -1,0 +1,70 @@
+{
+        "al.enableCodeAnalysis": true,
+        "al.codeAnalyzers": [
+                "${CodeCop}",
+                "${PerTenantExtensionCop}",
+                "${analyzerFolder}BusinessCentral.LinterCop.dll"
+        ],
+        "al.ruleSetPath": ".codeanalysis/our.ruleset.json",
+        "al.backgroundCodeAnalysis": "Project",
+        "al.packageCachePath": [
+                "./.alpackages"
+        ],
+        "files.exclude": {
+                "**/*business-central-Tenant*/**": true
+        },
+        "files.watcherExclude": {
+                "**/*business-central-Tenant*/**": true
+        },
+        "CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
+        "CRS.FileNamePattern": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
+        "CRS.ObjectNamePrefix": "MOB ",
+        "CRS.RemovePrefixFromFilename": true,
+        "CRS.RemoveUnderscoreFromFilename": false,
+        "CRS.RenameWithGit": true,
+        "CRS.OnSaveAlFileAction": "DoNothing",
+        "NAB.UseExternalTranslationTool": true,
+        "NAB.ReplaceSelfClosingXlfTags": false,
+        "NAB.SearchReplaceBeforeSaveXliff": [
+                {
+                        "searchFor": " approved=\"yes\">",
+                        "replaceWith": ">"
+                },
+                {
+                        "searchFor": "Tasklet Mobile WMS.g.xlf",
+                        "replaceWith": "Tasklet Mobile WMS"
+                },
+                {
+                        "searchFor": "source-language=\"en\"",
+                        "replaceWith": "source-language=\"en-US\""
+                },
+                {
+                        "searchFor": "target-language=\"bg\"",
+                        "replaceWith": "target-language=\"bg-BG\""
+                },
+                {
+                        "searchFor": "target-language=\"da\"",
+                        "replaceWith": "target-language=\"da-DK\""
+                },
+                {
+                        "searchFor": "target-language=\"de\"",
+                        "replaceWith": "target-language=\"de-DE\""
+                },
+                {
+                        "searchFor": "target-language=\"fi\"",
+                        "replaceWith": "target-language=\"fi-FI\""
+                },
+                {
+                        "searchFor": "target-language=\"fr\"",
+                        "replaceWith": "target-language=\"fr-FR\""
+                },
+                {
+                        "searchFor": "target-language=\"it\"",
+                        "replaceWith": "target-language=\"it-IT\""
+                },
+                {
+                        "searchFor": "target-language=\"nl\"",
+                        "replaceWith": "target-language=\"nl-NL\""
+                }
+        ]
+}

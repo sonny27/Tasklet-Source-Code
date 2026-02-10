@@ -1,0 +1,51 @@
+{
+    "name": "Ignore Ruleset",
+    "description": "The code analysis rules to ignore",    
+    "rules": [
+        {
+            "id": "AA0072", 
+            "action": "None",
+            "justification": "Variable naming conventions are excessive and can in many cases not be followed as suggested in the Info messages"
+        },
+        {
+            "id": "AA0139", 
+            "action": "None",
+            "justification": "Possible overflow"
+        },
+        {
+            "id": "AS0056", 
+            "action": "None",
+            "justification": "The code NZ is still not a valid ISO 3166-1 alpha-2 code for a country supported by the product in VSIX199169"
+        },
+        {
+            "id": "AS0081", 
+            "action": "None",
+            "justification": "The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development."
+        },
+        {
+            "id": "AS0057", 
+            "action": "None",
+            "justification": "Translations for the App is not supported for all supported languages but rather as Mobile WMS Languages messages"
+        },
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "The table xxx does not contain the key with the field yyy : Rule does not respect keys created in Mobile WMS"
+        },
+        {
+            "id": "AA0215",
+            "action": "None",
+            "justification": "For now we won't follow Microsoft File Naming Guidelines"
+        },
+        {
+            "id": "AA0217",
+            "action": "None",
+            "justification": "Our Mobile WMS language module clashes with this rule. MobileLanguage.GetMessage('BIN')"
+        },
+        {
+            "id": "AA0214",
+            "action": "None",
+            "justification": "This rule doesn't seem to be valid/working. We are failing on Inserting tables to trigger No. Series assignment before modifying more fields"
+        }
+    ]
+}
